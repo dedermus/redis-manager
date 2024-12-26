@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenAdmin\Admin\RedisManager\DataType;
+namespace OpenAdminCore\Admin\RedisManager\DataType;
 
 use Illuminate\Redis\Connections\Connection;
 use Illuminate\Support\Arr;
-use OpenAdmin\Admin\Widgets\Form;
+use OpenAdminCore\Admin\Widgets\Form;
 
 abstract class DataType
 {

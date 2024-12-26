@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\RedisManager;
+namespace OpenAdminCore\Admin\RedisManager;
 
 use Illuminate\Http\Request;
 use Illuminate\Redis\Connections\Connection;
@@ -8,13 +8,13 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Redis;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Extension;
-use OpenAdmin\Admin\RedisManager\DataType\DataType;
-use OpenAdmin\Admin\RedisManager\DataType\Hashes;
-use OpenAdmin\Admin\RedisManager\DataType\Lists;
-use OpenAdmin\Admin\RedisManager\DataType\Sets;
-use OpenAdmin\Admin\RedisManager\DataType\SortedSets;
-use OpenAdmin\Admin\RedisManager\DataType\Strings;
+use OpenAdminCore\Admin\Extension;
+use OpenAdminCore\Admin\RedisManager\DataType\DataType;
+use OpenAdminCore\Admin\RedisManager\DataType\Hashes;
+use OpenAdminCore\Admin\RedisManager\DataType\Lists;
+use OpenAdminCore\Admin\RedisManager\DataType\Sets;
+use OpenAdminCore\Admin\RedisManager\DataType\SortedSets;
+use OpenAdminCore\Admin\RedisManager\DataType\Strings;
 use Predis\Collection\Iterator\Keyspace;
 
 /**

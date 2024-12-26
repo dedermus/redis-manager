@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\RedisManager;
+namespace OpenAdminCore\Admin\RedisManager;
 
 use Illuminate\Support\ServiceProvider;
 

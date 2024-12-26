@@ -84,7 +84,7 @@
                 <tr data-key="{{$key['key']}}" class="row-{{$key['key']}}">
                     <td><input type="checkbox" class="key-select form-check-input row-selector grid-row-checkbox" data-key="{{ $key['key'] }}" data-id="{{ $key['key'] }}"></td>
                     <td><code>{{ $key['key'] }}</code></td>
-                    <td><span class="badge bg-{{ \OpenAdmin\Admin\RedisManager\RedisManager::typeColor($key['type']) }}">{{ $key['type'] }}</span></td>
+                    <td><span class="badge bg-{{ \OpenAdminCore\Admin\RedisManager\RedisManager::typeColor($key['type']) }}">{{ $key['type'] }}</span></td>
                     <td>{{ $key['ttl'] }}</td>
                     <td>
                         <a href="{{ route('redis-edit-key', ['key' => $key['key'], 'conn' => $conn]) }}"><i class="icon-edit"></i></a>

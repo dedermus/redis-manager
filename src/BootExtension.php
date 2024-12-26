@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenAdmin\Admin\RedisManager;
+namespace OpenAdminCore\Admin\RedisManager;
 
-use OpenAdmin\Admin\Facades\Admin;
+use OpenAdminCore\Admin\Facades\Admin;
 
 trait BootExtension
 {
@@ -22,17 +22,17 @@ trait BootExtension
     {
         parent::routes(function ($router) {
             /* @var \Illuminate\Routing\Router $router */
-            $router->get('redis', 'OpenAdmin\Admin\RedisManager\RedisController@index')->name('redis-index');
-            $router->delete('redis/key', 'OpenAdmin\Admin\RedisManager\RedisController@destroy')->name('redis-key-delete');
-            $router->get('redis/fetch', 'OpenAdmin\Admin\RedisManager\RedisController@fetch')->name('redis-fetch-key');
-            $router->get('redis/create', 'OpenAdmin\Admin\RedisManager\RedisController@create')->name('redis-create-key');
-            $router->post('redis/store', 'OpenAdmin\Admin\RedisManager\RedisController@store')->name('redis-store-key');
-            $router->get('redis/edit', 'OpenAdmin\Admin\RedisManager\RedisController@edit')->name('redis-edit-key');
-            $router->post('redis/key', 'OpenAdmin\Admin\RedisManager\RedisController@update')->name('redis-update-key');
-            $router->delete('redis/item', 'OpenAdmin\Admin\RedisManager\RedisController@remove')->name('redis-remove-item');
+            $router->get('redis', 'OpenAdminCore\Admin\RedisManager\RedisController@index')->name('redis-index');
+            $router->delete('redis/key', 'OpenAdminCore\Admin\RedisManager\RedisController@destroy')->name('redis-key-delete');
+            $router->get('redis/fetch', 'OpenAdminCore\Admin\RedisManager\RedisController@fetch')->name('redis-fetch-key');
+            $router->get('redis/create', 'OpenAdminCore\Admin\RedisManager\RedisController@create')->name('redis-create-key');
+            $router->post('redis/store', 'OpenAdminCore\Admin\RedisManager\RedisController@store')->name('redis-store-key');
+            $router->get('redis/edit', 'OpenAdminCore\Admin\RedisManager\RedisController@edit')->name('redis-edit-key');
+            $router->post('redis/key', 'OpenAdminCore\Admin\RedisManager\RedisController@update')->name('redis-update-key');
+            $router->delete('redis/item', 'OpenAdminCore\Admin\RedisManager\RedisController@remove')->name('redis-remove-item');
 
-            $router->get('redis/console', 'OpenAdmin\Admin\RedisManager\RedisController@console')->name('redis-console');
-            $router->post('redis/console', 'OpenAdmin\Admin\RedisManager\RedisController@execute')->name('redis-execute');
+            $router->get('redis/console', 'OpenAdminCore\Admin\RedisManager\RedisController@console')->name('redis-console');
+            $router->post('redis/console', 'OpenAdminCore\Admin\RedisManager\RedisController@execute')->name('redis-execute');
         });
     }
 

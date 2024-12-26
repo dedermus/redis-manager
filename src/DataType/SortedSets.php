@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAdmin\Admin\RedisManager\DataType;
+namespace OpenAdminCore\Admin\RedisManager\DataType;
 
 use Illuminate\Support\Arr;
 

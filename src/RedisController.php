@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenAdmin\Admin\RedisManager;
+namespace OpenAdminCore\Admin\RedisManager;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Str;
-use OpenAdmin\Admin\Facades\Admin;
-use OpenAdmin\Admin\Layout\Content;
+use OpenAdminCore\Admin\Facades\Admin;
+use OpenAdminCore\Admin\Layout\Content;
 
 class RedisController extends BaseController
 {
